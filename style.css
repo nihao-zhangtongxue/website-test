@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background: #fafbfc;
+  color: #222;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.carousel-section {
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: 32px;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 12px;
+}
+
+.carousel-images {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.carousel-btn {
+  background: #f5f6fa;
+  border: none;
+  color: #333;
+  font-size: 1.5rem;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin: 0 8px;
+}
+
+.carousel-btn:hover {
+  background: #e3e6ee;
+}
+
+.contact-section {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-btn {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(59,130,246,0.08);
+  transition: background 0.2s;
+}
+
+.contact-btn:hover {
+  background: #2563eb;
+}
+
+@media (max-width: 500px) {
+  .carousel-section {
+    max-width: 98vw;
+  }
+  .carousel-images {
+    width: 96vw;
+    height: 58vw;
+    max-width: 400px;
+    max-height: 250px;
+  }
+}
