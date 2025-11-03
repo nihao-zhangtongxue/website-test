@@ -1,1 +1,26 @@
-\"<!DOCTYPE html>\\n<html lang=\\\"zh\\\">\\n<head>\\n  <meta charset=\\\"UTF-8\\\">\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n  <title>作>品展示</title>\\n  <link rel=\\\"stylesheet\\\" href=\\\"styles.css\\\">\\n</head>\\n<body>\\n  <main class=\\\"container\\\">\\n    <section class=\\\"carousel-section\\\">\\n      <div class=\\\"carousel\\\" id=\\\"carousel\\\">\\n        <button class=\\\"carousel-btn prev\\\" id=\\\"prevBtn\\\" aria-label=\\\"上>一张\\\">&#8592;</button>\\n        <div class=\\\"carousel-images\\\" id=\\\"carouselImages\\\">\\n          <!-- 图片由JS插入 -->\\n        </div>\\n        <button class=\\\"carousel-btn next\\\" id=\\\"nextBtn\\\" aria-label=\\\"下一张\\\">&#8594;</button>\\n      </div>\\n    </section>\\n    <section class=\\\"contact-section\\\">\\n      <button class=\\\"contact-btn\\\" id=\\\"contactBtn\\\">联系方式</button>\\n    </section>\\n  </main>\\n  <script src=\\\"app.js\\\"></script>\\n</body>\\n</html>\\n\",\n  \"css\": \"body {\\n  margin: 0;\\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;\\n  background: #fafbfc;\\n  color: #222;\\n}\\n\\n.container {\\n  min-height: 100vh;\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: center;\\n  align-items: center;\\n  padding: 24px;\\n}\\n\\n.carousel-section {\\n  width: 100%;\\n  max-width: 420px;\\n  margin-bottom: 32px;\\n}\\n\\n.carousel {\\n  position: relative;\\n  display: flex;\\n  align-items: center;\\n  justify-content: center;\\n  background: #fff;\\n  border-radius: 12px;\\n  box-shadow: 0 2px 8px rgba(0,0,0,0.06);\\n  padding: 12px;\\n}\\n\\n.carousel-images {\\n  width: 400px;\\n  height: 250px;\\n  display: flex;\\n  align-items: center;\\n  justify-content: center;\\n  overflow: hidden;\\n}\\n\\n.carousel-img {\\n  width: 100%;\\n  height: 100%;\\n  object-fit: cover;\\n  border-radius: 8px;\\n  box-shadow: 0 1px 4px rgba(0,0,0,0.04);\\n}\\n\\n.carousel-btn {\\n  background: #f5f6fa;\\n  border: none;\\n  color: #333;\\n  font-size: 1.5rem;\\n  padding: 8px 12px;\\n  border-radius: 50%;\\n  cursor: pointer;\\n  transition: background 0.2s;\\n  margin: 0 8px;\\n}\\n.carousel-btn:hover {\\n  background: #e3e6ee;\\n}\\n\\n.contact-section {\\n  margin-top: 16px;\\n  display: flex;\\n  justify-content: center;\\n}\\n\\n.contact-btn {\\n  background: #3b82f6;\\n  color: #fff;\\n  border: none;\\n  padding: 10px 28px;\\n  border-radius: 6px;\\n  font-size: 1rem;\\n  cursor: pointer;\\n  box-shadow: 0 1px 4px rgba(59,130,246,0.08);\\n  transition: background 0.2s;\\n}\\n.contact-btn:hover {\\n  background: #2563eb;\\n}\\n\\n@media (max-width: 500px) {\\n  .carousel-section {\\n    max-width: 98vw;\\n  }\\n  .carousel-images {\\n    width: 96vw;\\n    height: 58vw;\\n    max-width: 400px;\\n    max-height: 250px;\\n  }\\n}\"
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品展示</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <section class="carousel-section">
+      <div class="carousel" id="carousel">
+        <button class="carousel-btn prev" id="prevBtn" aria-label="上一张">&#8592;</button>
+        <div class="carousel-images" id="carouselImages">
+          <!-- 图片由JS插入 -->
+        </div>
+        <button class="carousel-btn next" id="nextBtn" aria-label="下一张">&#8594;</button>
+      </div>
+    </section>
+    <section class="contact-section">
+      <button class="contact-btn" id="contactBtn">联系方式</button>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
